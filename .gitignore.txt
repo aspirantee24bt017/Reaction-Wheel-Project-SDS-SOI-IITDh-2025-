@@ -1,0 +1,26 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Arduino / C build
+*.elf
+*.hex
+*.o
+*.d
+
+# KiCad backups
+*-cache.lib
+*-rescue.lib
+*.kicad_pcb-bak
+*.bak
+*~
+
+# VS Code workspace settings
+.vscode/
+
+# Compressed archives (disabled to allow .zip files)
+# *.zip

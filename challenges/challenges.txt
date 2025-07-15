@@ -1,0 +1,16 @@
+Key Challenges in the Reaction Wheel Project
+
+1.  Untuned PID Constants
+    -   Kp, Ki, and Kd values are currently arbitrary due to lack of a
+        physical setup for proper tuning.
+
+2.  Oversized PCB
+    -   Current size: 11.8 x 11.9 cm; exceeds the 10 x 10 cm CubeSat
+        target.
+
+3.  Geometrical Misalignment
+    -   One axis of the 10 x 10 x 22 cm CubeSat is slightly off due to
+        tight spatial constraints.
+
+These are the key problems we faced during the execution of our reaction
+wheel project.

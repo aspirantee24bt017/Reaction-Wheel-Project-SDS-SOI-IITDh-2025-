@@ -111,8 +111,6 @@ void controlAxis(int axis, float current_angle) {
   unsigned long now = millis();
   float dt = (now - prev_time) / 1000.0;
   if (dt <= 0) return;
-  prev_time = now;
-
   float control = computePID(setpoint[axis], current_angle, integral[axis], prev_error[axis], dt);
   int rpm = constrain(control * 100, -4000, 4000); // Scale and clamp to VESC rpm range.
 
@@ -220,7 +218,7 @@ void loop() {
   requestCANValues(2);          // retriving real time data from VESC_z (CANid=2).
 
   logData();                    // storing the retireved data into log file.
-
+  prev_time=millis();
   delay(10);                    // delay time for stabalizing control signals.
 }
 
